@@ -1,0 +1,123 @@
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <a href="#" class="navbar-brand">PNT2022TMID47819</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse1">
+          <div class="navbar-nav">
+              <a href="/" class="nav-item nav-link active">Home</a>
+              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#seats" class="nav-item nav-link">Seats</a>
+          </div>
+          <form class="d-flex ms-auto" action="/login">
+              <button type="submit" class="btn btn-outline-light">Login</button>
+          </form>
+      </div>
+  </div>
+</nav>
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+      <img src="{{filename='img/arya.jpg')}}" class="d-block w-100">
+  </div>
+  <div class="carousel-item">
+     <img src="{{url_for('static', filename='img/arya2.jpg')}}" class="d-block w-50">
+   </div>
+  <div class="carousel-item">
+     <img src="{{url_for('static', filename='img/arya3.jpg')}}" class="d-block w-50">
+  </div>
+  </div>
+  </div>
+
+<div class="card text-center" id="seats">
+    <div class="card-header">
+        <h1>SEATS AVILABILITY</h1><br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Seats Book</h5>
+                <p class="card-text">
+                  A package will always include reserved or general admission tickets to the event, and may include one or some of the following: Meet and greet with the artist. A photo with the artist. Exclusive access to a private pre-show soundcheck. Exclusive access to a backstage tour.
+                </p>
+                <a href="#" class="btn btn-primary">Book Ticket</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Seats Check</h5>
+                <p class="card-text">NON-AC Seater is one kind of bus type that is more convenient for the Traveler when they are doing long journeys. NON-AC Seater available in both A/C as well as Non-A/C Bus Types. NON-AC Seater buses have the facilities like Push-Back & Water Bottle Holdings, etc.</p>
+                <a href="#" class="btn btn-primary">Check Ticket</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card-body" id="about">
+      <h1>About</h1><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Benefits of Bus</h2>
+              <p class="card-text" style="text-align:justify;font-size: 18px;font-style: italic;">
+                The Benefits of Bus Travel
+                It’s greener to get around by bus – buses help tackle air pollution by taking cars off the road
+                
+                A fully loaded double-decker bus can take 75 cars off the road
+                If everyone switched just one car journey a month to the bus, there would be one billion fewer car journeys on our roads, and a saving of 2 million tonnes of CO2[i]
+                Buses are vital to improving air quality. The latest models deliver a 95% reduction in NOx emissions compared to previous bus models[ii]
+                Diesel cars are the biggest contributor to road transport NOx emissions in the UK, contributing 41% of emissions compared with 30% for diesel vans and just 6% for buses and coaches[iii]
+                 Travelling by bus can be a less stressful way to travel and free up valuable time
+                 <br>
+                 <br>
+                
+                Travelling by bus is good for your health. It is a third less stressful than commuting by car
+                Taking the bus frees your hands and your head, allowing you to catch up on life admin, read a book or play games on your mobile.
+                Walking to the bus stop can, on average, help you achieve half the Government’s recommended 30 minutes of exercise per day
+                A third of drivers consider driving a chore because of high fuel costs and increased congestion.
+
+                <br>
+                <br>
+                 The bus is good value for everyone
+                Bus commuters help tackle congestion, which costs the UK economy at £11 billion each year
+                Bus commuters generate £64 billion of benefits to the UK economy
+                 Tackling loneliness & other social benefits
+                <br>
+                <br>
+                A third (33 per cent) of Britons admit that they deliberately catch the bus to have some human contact[iv]
+                Young people are more reliant on the bus than any other group – more than 50% of 16-19 year olds use the bus regularly[v]
+                Jobseekers are heavily dependent on the bus, with 77% having no regular access to a car, van or motorcycle, rising to 87% among 16-24 year olds[vi]
+                Buses are crucial to family life. 41% of passengers said they believed they would spend less time with family without access to the bus[vii]
+                Buses help local communities to thrive by keeping local people connecting and strengthening community ties.
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="{{url_for('static', filename='img/arya3.jpg')}}" class="d-block w-100 h-200">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
